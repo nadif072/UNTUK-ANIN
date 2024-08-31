@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e5e5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #d6336c;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #d6336c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b52a56;
+        }
+
+        .animation {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .animation img {
+            width: 200px;
+            height: auto;
+            animation: bounce 2s infinite;
+        }
+
+        .flower {
+            position: absolute;
+            pointer-events: none;
+            width: 50px;
+            height: auto;
+            animation: float 10s linear infinite;
+        }
+
+        /* Animasi bunga melayang */
+        @keyframes float {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Animasi bounce */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Animasi fadeIn */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday Sayangkuuu!!!! 🎉</h1>
+        <div class="animation">
+            <img src="pentolbucin.jpeg" alt="Animation">
+        </div>
+        <a href="message.html" class="btn">Lihat Pesan</a>
+    </div>
+
+    <!-- Bunga bertebaran -->
+    <img src="love.png" alt="Flower" class="flower" style="top: 10%; left: 20%; animation-duration: 12s;">
+    <img src="love.png" alt="Flower" class="flower" style="top: 30%; left: 50%; animation-duration: 14s;">
+    <img src="love.png" alt="Flower" class="flower" style="top: 50%; left: 30%; animation-duration: 16s;">
+    <img src="love.png" alt="Flower" class="flower" style="top: 70%; left: 70%; animation-duration: 18s;">
+</body>
+</html>
